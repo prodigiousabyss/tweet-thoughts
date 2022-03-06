@@ -1,23 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
+import { Heading } from './components/rest';
+import {Tweet} from './components/tweet';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+       <div className="rest">
+      <div className="tweet-box">
+        <Heading />
+        <Tweet/>
+        <button className="oshin">Generate more content</button>
+      </div>
+      </div>
     </div>
   );
 }

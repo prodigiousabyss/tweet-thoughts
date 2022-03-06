@@ -1,38 +1,76 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css?family=Lato');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.tweet-box {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(15, 18, 20);
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-direction: column;
+  font-family: monospace;
+}
+
+.prompt {
+  width: 40rem;
+  height: 20rem;
+  background-color: beige;
+  border-radius: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 3.4rem;
+  padding-right: 3.4rem;
+  font-family: "Lato";
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.prompt h2 {
+  line-height: 2.2rem;
+}
+
+.prompt p {
+  letter-spacing: 0.1rem;
+}
+
+.prompt img {
+  width: 4rem;
+}
+.rest h1 {
+ color: white;
+ 
+}
+.promptFooter {
+display: flex;
+justify-content: space-between;
+}
+.prompt button {
+  border-radius: 10rem;
+  border: none;
+  cursor: pointer;
+  height:3rem;
+  width: 6rem;
+  background-color: #00acee;
+  font-family:'Courier New', Courier, monospace;
+}
+
+.prompt button:hover {
+  opacity: 0.8;
+}
+
+.oshin {
+  width: max-content;
+  height: auto;
+  font-size: 1.9rem;
+  font-weight: 600;
+  padding: 0.4rem 1rem;
+  margin-top: 2rem;
+  border-radius: 0.3rem;
+  border-color: white;
+}
+
+.oshin:hover {
+  background-color: black;
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
